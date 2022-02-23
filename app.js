@@ -1,6 +1,7 @@
 require('dotenv').config()
-
 const express = require('express');
+require('./config/db.config')(); //invocando a função
+
 const app = express();
 
 app.use(express.json())
