@@ -14,3 +14,5 @@ const contentSchema = new Schema({
 
     contentBody: { type: String, required: true },
 })
+
+module.exports = mongoose.model("Content", contentSchema) //nome do arquivo, e segue a receira da schema
